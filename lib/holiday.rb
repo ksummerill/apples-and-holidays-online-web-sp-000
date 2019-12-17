@@ -113,12 +113,12 @@ end
 #   }
 # }
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each do |season|
+  holiday_hash.each do |season, holiday_name|
     puts season.to_s.capitalize! + ":"
-
+    
 
     # puts holiday_name.to_s
-
+    
   end
 end
 
