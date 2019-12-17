@@ -118,13 +118,14 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_name.each do |holiday, value|
         if holiday_name
         puts "  " + holiday.to_s.capitalize! + ": " + value.join(", ")
-      else holiday_name == :new_years || holiday_name == :fourth_of_july || holiday_name == :memorial_day
-        capitalize_holiday_array = holiday_name.to_s.split
-        # capitalize_holiday_array = ["new", "years"]
-        capitalize_holiday_array.each do |cap|
-          clean_holiday = cap.capitalize!
-        puts "  " + clean_holiday.join() + ": " + value.join(", ") 
-      end
+        else holiday_name == :new_years || holiday_name == :fourth_of_july || holiday_name == :memorial_day
+          capitalize_holiday_array = holiday_name.to_s.split
+          # capitalize_holiday_array = ["new", "years"]
+          capitalize_holiday_array.each do |cap|
+            clean_holiday = cap.capitalize!
+              puts "  " + clean_holiday.join() + ": " + value.join(", ") 
+            end
+        end
       end
   end
 end
