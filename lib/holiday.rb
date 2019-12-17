@@ -116,7 +116,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday_name|
     puts season.to_s.capitalize! + ":"
       holiday_name.each do |holiday, value|
-        if holiday_name
+        if holiday_name == :christmas || holiday_name == :thanksgiving
         puts "  " + holiday.to_s.capitalize! + ": " + value.join(", ")
         else holiday_name == :new_years || holiday_name == :fourth_of_july || holiday_name == :memorial_day
           capitalize_holiday_array = holiday_name.to_s.split
