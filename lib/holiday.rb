@@ -96,37 +96,14 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 
-# --------------------------------------------------------
-# {
-#   :winter => {
-#     :christmas => ["Lights", "Wreath"],
-#     :new_years => ["Party Hats"]
-#   },
-#   :summer => {
-#     :fourth_of_july => ["Fireworks", "BBQ"]
-#   },
-#   :fall => {
-#     :thanksgiving => ["Turkey"]
-#   },
-#   :spring => {
-#     :memorial_day => ["BBQ"]
-#   }
-# }
+
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday_name|
     puts season.to_s.capitalize! + ":"
       holiday_name.each do |holiday, value|
-        if holiday == :christmas || holiday == :thanksgiving
-        puts "  " + holiday.to_s.capitalize! + ": " + value.join(", ")
-        else holiday == :new_years || holiday == :fourth_of_july || holiday == :memorial_day
-          capitalize_holiday_array = holiday.to_s.split("_")
-          # capitalize_holiday_array = ["new", "years"]
-          capitalize_holiday_array.each do |cap|
-            clean_holiday = cap.capitalize!
-            best_holiday = clean_holiday.join(" ")
-              puts "  " + best_holiday + ": " + value.join(", ")
-            end
-        end
+        best_holiday = holiday.to_s.split("_").collect {
+          |name| name.capitalize!
+        }.join(" ")
       end
   end
 end
