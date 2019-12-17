@@ -96,19 +96,37 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 
+# --------------------------------------------------------
+# {
+#   :winter => {
+#     :christmas => ["Lights", "Wreath"],
+#     :new_years => ["Party Hats"]
+#   },
+#   :summer => {
+#     :fourth_of_july => ["Fireworks", "BBQ"]
+#   },
+#   :fall => {
+#     :thanksgiving => ["Turkey"]
+#   },
+#   :spring => {
+#     :memorial_day => ["BBQ"]
+#   }
+# }
+def all_supplies_in_holidays(holiday_hash)
+  puts holiday_hash[:winter]
 
-# iterate through holiday_hash and print items such that your readout resembles:
+end
+
+# iterate through holiday_hash and print items such that your readout is:
 # Winter:
 #   Christmas: Lights, Wreath
 #   New Years: Party Hats
 # Summer:
 #   Fourth Of July: Fireworks, BBQ
-# etc.
-def all_supplies_in_holidays(holiday_hash)
-
-
-end
-
+# Fall:
+#   Thanksgiving: Turkey
+# Spring:
+#   Memorial Day: BBQ
 
 
 
