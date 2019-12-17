@@ -120,6 +120,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.collect do |holiday, value|
       holiday if value.include?("BBQ")
     end
+return holiday
   end
-  return holiday
+  
 end
