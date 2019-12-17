@@ -72,9 +72,14 @@ end
 # remember to return the updated hash
 # Write a method that adds a new holiday and its associated supplies to any season
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
+  holiday_hash[season][holiday_name] = supply_array
+  holiday_hash
+
+
+
   # if season passed in == fall then add that key/value to fall
-  if season == :fall
-    holiday_hash.merge!([:season][:holiday_name]["supply_array"])
+  # if season == :fall
+  #   holiday_hash.merge!([:season][:holiday_name]["supply_array"])
 
   # holiday_hash.each do |season, holiday_name, supply_array|
   #   if season == :fall
@@ -87,7 +92,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
 end
 
-# -------------
+
 
 
   # return an array of all of the supplies that are used in the winter season
@@ -108,8 +113,6 @@ def all_supplies_in_holidays(holiday_hash)
       end
   end
 end
-
-
 
 
 
