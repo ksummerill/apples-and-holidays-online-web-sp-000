@@ -113,7 +113,7 @@ end
 #   }
 # }
 def all_supplies_in_holidays(holiday_hash)
-  puts holiday_hash[:winter]
+  puts holiday_hash[:winter].to_s
 
 end
 
