@@ -123,7 +123,7 @@ def all_supplies_in_holidays(holiday_hash)
           # capitalize_holiday_array = ["new", "years"]
           capitalize_holiday_array.each do |cap|
             clean_holiday = cap.capitalize!
-              puts "  " + clean_holiday.join() + ": " + value.join(", ") 
+              puts "  " + clean_holiday.join() + ": " + value.join(", ")
             end
         end
       end
