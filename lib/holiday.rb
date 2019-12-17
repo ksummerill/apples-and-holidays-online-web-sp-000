@@ -75,21 +75,6 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   holiday_hash[season][holiday_name] = supply_array
   holiday_hash
 
-
-
-  # if season passed in == fall then add that key/value to fall
-  # if season == :fall
-  #   holiday_hash.merge!([:season][:holiday_name]["supply_array"])
-
-  # holiday_hash.each do |season, holiday_name, supply_array|
-  #   if season == :fall
-  #     holiday_hash = [season][holiday_name][supply_array]
-  #   elsif season ==
-
-
-    # end
-  end
-  add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
 end
 
 
