@@ -104,6 +104,7 @@ def all_supplies_in_holidays(holiday_hash)
         best_holiday = holiday.to_s.split("_").collect {
           |name| name.capitalize!
         }.join(" ")
+      puts " #{best_holiday}: #{value.join(", ")}"  
       end
   end
 end
