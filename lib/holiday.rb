@@ -96,7 +96,7 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 
-
+# iterate through holiday_hash and print items such that your readout is:
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday_name|
     puts season.to_s.capitalize! + ":"
@@ -109,16 +109,7 @@ def all_supplies_in_holidays(holiday_hash)
   end
 end
 
-# iterate through holiday_hash and print items such that your readout is:
-# Winter:
-#   Christmas: Lights, Wreath
-#   New Years: Party Hats
-# Summer:
-#   Fourth Of July: Fireworks, BBQ
-# Fall:
-#   Thanksgiving: Turkey
-# Spring:
-#   Memorial Day: BBQ
+
 
 
 
